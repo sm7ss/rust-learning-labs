@@ -1,0 +1,27 @@
+# Generados por Cargo
+/target/
+BeginningLabs/hello_cargo/target/
+**/*.rs.bk
+Cargo.lock
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ejecutables generados (por si acaso)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos de test temporal
+/test-output/
