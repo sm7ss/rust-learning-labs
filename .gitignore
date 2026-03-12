@@ -1,6 +1,7 @@
 # Generados por Cargo
 /target/
 BeginningLabs/hello_cargo/target/
+BeginningLabs/guessing_game/target/
 **/*.rs.bk
 Cargo.lock
 
