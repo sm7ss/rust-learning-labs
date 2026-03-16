@@ -31,13 +31,13 @@ fn main() {
         .read_line(&mut input_per)
         .expect("Failed to read your percent tip");
         
-        let input_per = match input_per.trim().parse::<f64>() {
-            Ok(num) => num, 
+        match input_per.trim().parse::<f64>() {
+            Ok(num) => break num, 
             Err(_) => {
                 println!("Your percent tip should be a float");
                 continue;
             }
-        };
+        }
     };
     
     
