@@ -3,6 +3,7 @@
 BeginningLabs/hello_cargo/target/
 BeginningLabs/guessing_game/target/
 BeginningLabs/tip_calculation/target/
+BeginningLabs/functions_exercise/target/
 **/*.rs.bk
 Cargo.lock
 
