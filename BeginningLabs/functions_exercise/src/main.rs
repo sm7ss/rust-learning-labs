@@ -1,11 +1,5 @@
-use std::any::type_name;
-
 const MAX_GRADE: i32 = 100; 
 const MIN_GRADE: i32 = 0;
-
-fn data_type<T>(_: &T) {
-    println!("{}", type_name::<T>());
-}
 
 fn main() {
     let grades: [i32; 10] = [85, 92, 78, 65, 95, 88, 72, 90, 68, 81];
