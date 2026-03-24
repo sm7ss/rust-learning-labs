@@ -11,11 +11,13 @@ fn avergae_imputation(grades: &mut [u32]) -> u32 {
     let sum: u32 = grades.iter()
         .filter(|&&n| n >= MIN_GRADE && n <= MAX_GRADE)
         .sum(); 
-    let count: u32 = grades.iter()
+    let count: usize = grades.iter()
         .filter(|&&n| n >= MIN_GRADE && n <= MAX_GRADE)
         .count();
-    
+    sum / count as u32
 }
+
+
 
 fn max_min_grades_validation(grade: &mut[u32]) -> usize {
     let mut changes: usize = 0;
@@ -26,7 +28,7 @@ fn max_min_grades_validation(grade: &mut[u32]) -> usize {
             *g = 0;
             
             
-            *g = avergae_imputation(grade);
+            //*g = avergae_imputation(grade);
             println!("Your new value {g}");
             
             changes += 1
@@ -41,6 +43,9 @@ fn main() {
     let mut copy_grades = grades; //this can be hard because its a copy
     
     let change: usize = max_min_grades_validation(&mut copy_grades);
+    let avg = avergae_imputation(&mut copy_grades);
+    
+    println!("{}", avg);
     
     if change > 0 {
         println!("New grades: {:?}", grades);
